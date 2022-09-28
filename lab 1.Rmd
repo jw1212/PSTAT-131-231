@@ -40,8 +40,8 @@ Each function in R has its own set of arguments and possible values that these a
 To get help about `mean()`, you can uncomment (delete the `#`) and run either of these lines:
 
 ```{r}
-# ?mean
-# help(mean)
+?mean
+help(mean)
 ```
 
 Or simply open your Web browser and do a search for something like `R function mean help`.
