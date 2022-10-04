@@ -156,6 +156,12 @@ On your own, find ways to filter the `flights` data set from the `nycflights13` 
 - Were delayed by at least an hour, but made up over 30 minutes in flight
 - Departed between midnight and 6am (inclusive)
 
+```{r}
+flights %>% 
+  filter(arr_delay >= 2 & dest == "IAH" | dest == "HOU")
+```
+
+
 ### Select specific variables or columns by their names: `select()`
 
 Often in machine learning, we end up working with very large data sets that have a lot of columns. The `mpg` data set is pretty small, but we can still practice with it.
